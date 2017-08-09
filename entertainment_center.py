@@ -3,7 +3,7 @@ from media import Movie
 
 
 def main():
-
+    # Hardcoded Movie objects
     fight_club = Movie("Fight Club",
                        "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
                        "https://www.youtube.com/watch?v=SUXWAEX2jlg")
@@ -24,10 +24,11 @@ def main():
                        "https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg",
                        "https://www.youtube.com/watch?v=YBqmKSAHc6w")
 
+    # Add Movie Objects to a list
     movies = [fight_club, martian, toy_story3, matrix, no_country]
-
+    # call the open_movies_page function from the provided py script.
     fresh_tomatoes.open_movies_page(movies)
 
-
+# Make the script callable via the command line
 if __name__ == '__main__':
     main()
